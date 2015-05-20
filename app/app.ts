@@ -1,20 +1,50 @@
-///<references path="../typings/angular2/angular2.d.ts">
-
-import {Component, View, bootstrap} from 'angular2/angular2';
-
-@Component({
-  selector: 'my-app'
-})
-@View({
-  template: '<h1>Hello {{ name }}</h1>'
-})
-// Component controller
-class MyAppComponent {
-  name: string;
-  
-  constructor() {
-    this.name = 'Bala';
-  }
+var header = {
+	title 	: "Hello",
+	logo 	: "my logo"
 }
 
-bootstrap(MyAppComponent);
+
+var navList = [
+	{
+		title 	: "home",
+		link 	: "#/home"
+	},
+	{
+		title 	: "about",
+		link 	: "#/about"
+	},
+	{
+		title 	: "contact",
+		link 	: "#/contact"
+	}
+];
+
+var table = {
+	columnHeaders : ['title1','title2','title3','title4','title5'],
+	rows 		  : [
+		{
+			'title1' 	: "helllo",
+			'title2' 	: "helllo",
+			'title3' 	: "helllo",
+			'title4' 	: "helllo",
+			'title5' 	: "helllo"
+		},
+		{
+			'title1' 	: "helllo1",
+			'title2' 	: "helllo1",
+			'title3' 	: "helllo1",
+			'title4' 	: "helllo1",
+			'title5' 	: "helllo1"
+		},
+		{
+			'title1' 	: "helllo2",
+			'title2' 	: "helllo2",
+			'title3' 	: "helllo2",
+			'title4' 	: "helllo2",
+			'title5' 	: "helllo2"
+		}
+	]
+}
+components.header();
+component.navBar();
+component.table();
