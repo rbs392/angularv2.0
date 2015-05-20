@@ -45,6 +45,6 @@ var table = {
 		}
 	]
 }
-components.header();
-component.navBar();
-component.table();
+components.header(header.title,header.logo);
+components.navBar(navList);
+components.table(table);
