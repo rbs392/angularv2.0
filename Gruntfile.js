@@ -2,13 +2,7 @@ module.exports = function(grunt) {
 
 	
 	grunt.initConfig({
-		serve: {
-			path: '/home/bala/Github/angularv2/app/index.html',
-	        options: {
-	            port: 9000
-	        }
-	    },
-	    connect: {
+		connect: {
 		    server: {
 		      options: {
 			        port: 9000,
@@ -33,7 +27,6 @@ module.exports = function(grunt) {
     
 	});
 
-	grunt.loadNpmTasks('grunt-serve');
 	grunt.loadNpmTasks('grunt-ts');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 
